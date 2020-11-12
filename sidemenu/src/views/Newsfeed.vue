@@ -23,7 +23,7 @@
       <ion-card-title>Expansion at Hochschule Mainz</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <p>The expansion of the main building is in full swing. For more detailed information click here: <a href="https://www.hs-mainz.de/"> DigiEduHack</a></p>
+      <p>The expansion of the main building is in full swing. For more detailed information click here: <a href="https://www.hs-mainz.de/"> HS-Mainz</a></p>
     </ion-card-content>
   </ion-card>
 
@@ -33,7 +33,7 @@
       <ion-card-title>DigiEduHack - #Semesterhack 2.0</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <p>The semester hack will take place again this year. You have an idea and want to be creative? Then inform yourself here how you can participate:<a href="https://digieduhack.com/en/"> HS-Mainz</a></p>
+      <p>The semester hack will take place again this year. You have an idea and want to be creative? Then inform yourself here how you can participate:<a href="https://digieduhack.com/en/"> DigiEduHack</a></p>
     </ion-card-content>
   </ion-card>
 
