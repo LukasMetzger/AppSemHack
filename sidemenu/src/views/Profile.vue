@@ -26,8 +26,7 @@
               </div>
           </div>
       </div>
-    </ion-content>
-    <ion-list>
+          <ion-list>
       <ion-item>
         <div id='friendlist'>Friends</div>
       </ion-item>
@@ -67,6 +66,7 @@
         <ion-button color='success'>Write</ion-button>
       </ion-item>
     </ion-list>
+    </ion-content>
   </ion-page>
 </template>
 
