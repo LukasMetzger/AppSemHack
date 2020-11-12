@@ -20,7 +20,7 @@
         <div id="profile-bg"></div>
           <div id="content">
               <div id="profile-info">
-                  <img id="profile-image" src="/assets/test.jpeg">
+                  <img id="profile-image" src="./IMG_0674.jpg">
                   <h3 id="profile-name">Lukas Metzger</h3>
                   <span id="profile-description">lukas.bischofsheim@gmx.de</span>
               </div>
@@ -144,7 +144,7 @@ ion-menu-button {
 #content {
   position: relative;
   margin-top: 100px;
-  background-color: white;
+  
   box-shadow: 0px -1px 10px rgba(0,0,0,0.4);
   padding-top: 200px;
 }
@@ -171,7 +171,6 @@ ion-menu-button {
 #profile-image {
   display: block;
   border-radius: 100px;
-  border: 2px solid goldenrod;
   width: 128px;
   height: 128px;
   margin: 30px auto 0;
@@ -214,13 +213,13 @@ ion-menu-button {
 }
 
 #top{
-  background-color: white;
+  
   color: black;
   text-align: center;
 }
 
 #top2{
-  background-color: white;
+  
   color: white;
   text-align: center;
 }
@@ -230,7 +229,7 @@ ion-menu-button {
 }
 
 #friendlist {
-  background-color: white;
+  
   padding-left: 5%;
   font-size: 20px;
   font-weight: bold;
