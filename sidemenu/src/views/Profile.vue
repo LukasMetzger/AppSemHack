@@ -171,7 +171,6 @@ ion-menu-button {
 #profile-image {
   display: block;
   border-radius: 100px;
-  border: 2px solid goldenrod;
   width: 128px;
   height: 128px;
   margin: 30px auto 0;
