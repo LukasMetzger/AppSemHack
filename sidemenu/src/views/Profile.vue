@@ -35,35 +35,35 @@
           <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
         </ion-avatar>
         <ion-label class="profile-avatar">Can Dogan</ion-label>
-        <ion-button color='success'>Write</ion-button>
+        <ion-button color='success'><a class="profile-friends-write" href="/Channels" >Write</a></ion-button>
       </ion-item>
       <ion-item>
         <ion-avatar>
           <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
         </ion-avatar>
         <ion-label class="profile-avatar">Julian Schwarz</ion-label>
-        <ion-button color='success'>Write</ion-button>
+        <ion-button color='success'><a class="profile-friends-write" href="/Channels" >write</a></ion-button>
       </ion-item>
       <ion-item>
         <ion-avatar>
           <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
         </ion-avatar>
         <ion-label class="profile-avatar">Alex Geib</ion-label>
-        <ion-button color='success'>Write</ion-button>
+        <ion-button color='success'><a class="profile-friends-write" href="/Channels" >write</a></ion-button>
       </ion-item>
       <ion-item>
         <ion-avatar>
           <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
         </ion-avatar>
         <ion-label class="profile-avatar">Kaan Selcuk</ion-label>
-        <ion-button color='success'>Write</ion-button>
+        <ion-button color='success'><a class="profile-friends-write" href="/Channels" >write</a></ion-button>
       </ion-item>
       <ion-item>
         <ion-avatar>
           <img src="https://www.klicksafe.de/fileadmin/media/images/themen/kommunizieren/Apps/Mobile_Games/Super_Mario_Run.png">
         </ion-avatar>
         <ion-label class="profile-avatar">Super Mario</ion-label>
-        <ion-button color='success'>Write</ion-button>
+        <ion-button color='success'><a class="profile-friends-write" href="/Channels" >write</a></ion-button>
       </ion-item>
     </ion-list>
     </ion-content>
@@ -238,6 +238,11 @@ ion-menu-button {
 
 .profile-avatar {
   padding-left: 10px;
+}
+
+.profile-friends-write {
+  text-decoration: none;
+  color: white;
 }
 
 </style>
