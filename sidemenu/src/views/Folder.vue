@@ -17,15 +17,58 @@
       </ion-header>
     
       <div id="container">
-        <strong class="capitalize">{{ folder }}</strong>
-        <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+        <ion-card style="text-align: center">
+        <img src="./csm__MG_8378final1920_67dc6ffe34.jpg">
+    <ion-card-header>
+      <ion-card-title>News</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>The expansion of the main building is in full swing. For more detailed information click here: <a href="https://www.hs-mainz.de/">Link</a></p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label><h1>Notifications</h1></ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-item-sliding>
+      <ion-item>
+        <ion-label><p><a href="/Channels" >New Messages</a> (13)</p></ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option @click="unread(item)" color="danger">Delete</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    </ion-item>
+    <ion-item>
+      <ion-item-sliding>
+      <ion-item>
+        <ion-label><p><a href="/Events">New Events</a> (3)</p></ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option @click="unread(item)" color="danger">Delete</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    </ion-item>
+    <ion-item>
+      <ion-item-sliding>
+      <ion-item>
+        <ion-label><p><a href="/Surveys">New Survey</a> (1)</p></ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option @click="unread(item)" color="danger">Delete</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    </ion-item>
+  </ion-list>
       </div>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent, IonCardTitle, } from '@ionic/vue';
 import { useRoute } from 'vue-router';
 import { ref, computed, watch } from 'vue';
 
@@ -39,6 +82,7 @@ export default {
     IonPage,
     IonTitle,
     IonToolbar,
+    IonCard, IonCardContent, IonCardTitle,
   },
   setup() {
     const route = useRoute();
@@ -60,12 +104,9 @@ ion-menu-button {
 }
 
 #container {
-  text-align: center;
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 #container strong {
