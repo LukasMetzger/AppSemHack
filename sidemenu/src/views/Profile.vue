@@ -20,7 +20,7 @@
         <div id="profile-bg"></div>
           <div id="content">
               <div id="profile-info">
-                  <img id="profile-image" src="/assets/test.jpeg">
+                  <img id="profile-image" src="./IMG_0674.jpg">
                   <h3 id="profile-name">Lukas Metzger</h3>
                   <span id="profile-description">lukas.bischofsheim@gmx.de</span>
               </div>
