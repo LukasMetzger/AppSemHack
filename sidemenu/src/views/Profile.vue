@@ -144,7 +144,7 @@ ion-menu-button {
 #content {
   position: relative;
   margin-top: 100px;
-  background-color: white;
+  
   box-shadow: 0px -1px 10px rgba(0,0,0,0.4);
   padding-top: 200px;
 }
@@ -214,13 +214,13 @@ ion-menu-button {
 }
 
 #top{
-  background-color: white;
+  
   color: black;
   text-align: center;
 }
 
 #top2{
-  background-color: white;
+  
   color: white;
   text-align: center;
 }
@@ -230,7 +230,7 @@ ion-menu-button {
 }
 
 #friendlist {
-  background-color: white;
+  
   padding-left: 5%;
   font-size: 20px;
   font-weight: bold;
