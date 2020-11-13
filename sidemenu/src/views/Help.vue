@@ -17,16 +17,83 @@
       </ion-header>
     
       <div id="container">
-        <p> Hier ist die Help Seite</p>
+        <div class="flexColumn" style="width: 100%">
+          <div>
+            <ion-searchbar id="help-searchbar" aria-placeholder="Search"></ion-searchbar>
+          </div>
+          <div class="flexRow">
+            <div>
+              <ion-chip id="help-filterIcon">
+                <img style="width: 15px; height: 15px;" :src="i.funnel">
+              </ion-chip>
+            </div>
+            <div>
+              <ion-chip outline color="dark">
+                <ion-icon name="videocam"></ion-icon>
+                <ion-label>FAQ</ion-label>
+                <ion-icon name="close-circle"></ion-icon>
+              </ion-chip>
+            </div>
+            <div>
+              <ion-chip outline color="dark">
+                <ion-icon name="videocam"></ion-icon>
+                <ion-label>BLOG</ion-label>
+                <ion-icon name="close-circle"></ion-icon>
+              </ion-chip>
+            </div>
+          </div>
+          <div id="help-searchResults" class="flexColumn">
+            <div>
+              <ion-card>
+                <ion-item>
+                  <ion-icon :icon="pin" slot="start"></ion-icon>
+                  <ion-label>Channels</ion-label>
+                  <ion-button fill="outline" slot="end">FAQ</ion-button>
+                </ion-item>
+
+                <ion-card-content>
+                  Can we join any channel we want?
+                </ion-card-content>
+              </ion-card>
+            </div>
+            <div>
+              <ion-card>
+                <ion-item>
+                  <ion-icon :icon="pin" slot="start"></ion-icon>
+                  <ion-label>Events</ion-label>
+                  <ion-button fill="outline" slot="end">FAQ</ion-button>
+                </ion-item>
+
+                <ion-card-content>
+                  How can I create an event?
+                </ion-card-content>
+              </ion-card>
+            </div>
+            <div>
+              <ion-card>
+                <ion-item>
+                  <ion-icon :icon="pin" slot="start"></ion-icon>
+                  <ion-label>Events</ion-label>
+                  <ion-button fill="outline" slot="end">BLOG</ion-button>
+                </ion-item>
+
+                <ion-card-content>
+                  Is there any events for this and that?
+                </ion-card-content>
+              </ion-card>
+            </div>
+          </div>
+        </div>
       </div>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, IonSearchbar, IonCard, IonCardContent, IonIcon, IonItem, IonLabel } from '@ionic/vue';
+import * as allIcons from "ionicons/icons";
 import { useRoute } from 'vue-router';
-import { ref, computed, watch } from 'vue';
+import { ref, computed, watch, defineComponent } from 'vue';
 
 export default {
   name: 'Folder',
@@ -38,6 +105,12 @@ export default {
     IonPage,
     IonTitle,
     IonToolbar,
+    IonSearchbar,
+    IonCard, 
+    IonCardContent,
+    IonIcon, 
+    IonItem, 
+    IonLabel
   },
   setup() {
     const route = useRoute();
@@ -48,7 +121,7 @@ export default {
       folder.value = matchedFolder.value as string;
     })
     
-    return { folder }
+    return { folder, i : allIcons }
   }
 }
 </script>
@@ -65,6 +138,7 @@ ion-menu-button {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
 }
 
 #container strong {
@@ -81,5 +155,31 @@ ion-menu-button {
 
 #container a {
   text-decoration: none;
+}
+
+.flexRow {
+  flex-direction: row;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+#help-searchResults {
+  margin-top: 20px;
+}
+
+#help-searchbar {
+  position: absolute;
+  top: -40px;
+}
+
+#help-ionCard {
+  text-align: center;
+}
+
+#help-filterIcon {
+  top: 15px;
+  left: -40%;
 }
 </style>
