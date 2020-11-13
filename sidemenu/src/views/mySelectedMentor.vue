@@ -27,24 +27,24 @@
           </div>
           <div>
            <ion-item>
-            <ion-label>Institut:</ion-label>
+            <ion-label>Institute:</ion-label>
             <ion-note slot="end">Hochschule Mainz</ion-note>
           </ion-item>
            <ion-item>
-            <ion-label>Studiengang:</ion-label>
+            <ion-label>Course:</ion-label>
             <ion-note slot="end">Wirtschaftsinformatik B. Sc. dual</ion-note>
           </ion-item>
            <ion-item>
-            <ion-label>Semester:</ion-label>
+            <ion-label>Term:</ion-label>
             <ion-note slot="end">5.</ion-note>
           </ion-item>
            <ion-item>
-            <ion-label>Fähigkeiten:</ion-label>
+            <ion-label>Abilities:</ion-label>
             <ion-note slot="end">SQL, PHP, JS, TS</ion-note>
           </ion-item>
            <ion-item>
-            <ion-label>Interessen:</ion-label>
-            <ion-note slot="end">Games, Fußball</ion-note>
+            <ion-label>Interests:</ion-label>
+            <ion-note slot="end">Games, Soccer</ion-note>
           </ion-item>
           </div>
           <div>

@@ -106,7 +106,6 @@ export default defineComponent({
         mdIcon: peopleOutline
       }
     ];
-    const labels = ['Impressum'];
     
     const path = window.location.pathname.split('folder/')[1];
     if (path !== undefined) {
@@ -118,7 +117,6 @@ export default defineComponent({
     return { 
       selectedIndex,
       appPages,
-      labels,
       personCircleOutline, newspaperOutline, chatbubblesOutline, readerOutline, helpCircleOutline, peopleOutline, calendarOutline,
       isSelected: (url: string) => url === route.path ? 'selected' : ''
     }
