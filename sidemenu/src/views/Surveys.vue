@@ -17,7 +17,82 @@
       </ion-header>
     
       <div id="container">
-        <p> Hier ist die Surveys Seite</p>
+        <ion-slides>
+
+        <ion-slide>
+          <div class="slide">
+            <ion-card style="text-align: center">
+        <img src="./digieduhack_post.png">
+    <ion-card-header>
+      <ion-card-title>Should there be a Semsterhack 3.0?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+    <ion-radio-group value="biff">
+      <ion-list-header>
+        Expiring date: 30.12.2020
+      </ion-list-header>
+      <p>Question 1/10</p>
+      <ion-item>
+        <ion-label>Yes, obviously!!!</ion-label>
+        <ion-radio slot="start" value="biff"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Oh god no!!</ion-label>
+        <ion-radio slot="start" value="siff"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>I could not care less!</ion-label>
+        <ion-radio slot="start" value="griff"></ion-radio>
+      </ion-item>
+      
+    </ion-radio-group>
+  </ion-list>
+    </ion-card-content>
+    
+  </ion-card>
+  <p>Next Survey</p>
+  <ion-icon :src="i.arrowForwardOutline" color="primary"></ion-icon>
+          </div>
+
+        </ion-slide>
+
+        <ion-slide>
+          <div class="slide">
+            <ion-card style="text-align: center">
+        <img src="./csm_Campus_Headerbild_02_f3284c00d9.jpg">
+    <ion-card-header>
+      <ion-card-title>Do you prefere "Presences lectures" or "Home Schooling"?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+    <ion-radio-group value="biff">
+      <ion-list-header>
+        Expiring date: 01.02.2020
+      </ion-list-header>
+      <p>Question 1/2</p>
+      <ion-item>
+        <ion-label>Presences lectures</ion-label>
+        <ion-radio slot="start" value="biff"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Home Schooling</ion-label>
+        <ion-radio slot="start" value="siff"></ion-radio>
+      </ion-item>
+      
+    </ion-radio-group>
+  </ion-list>
+    </ion-card-content>
+    
+  </ion-card>
+  <p>Next Survey</p>
+  <ion-icon :src="i.arrowForwardOutline" color="primary"></ion-icon>
+          </div>
+        </ion-slide>
+      </ion-slides>
       </div>
     </ion-content>
   </ion-page>
@@ -27,6 +102,7 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
 import { useRoute } from 'vue-router';
 import { ref, computed, watch } from 'vue';
+import * as allIcons from "ionicons/icons";
 
 export default {
   name: 'Folder',
@@ -48,7 +124,7 @@ export default {
       folder.value = matchedFolder.value as string;
     })
     
-    return { folder }
+    return { folder, i : allIcons }
   }
 }
 </script>

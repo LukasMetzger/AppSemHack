@@ -79,7 +79,7 @@
 
         <ion-item>
           <ion-avatar slot="start">
-            <img src="">
+            <img src="https://profile-images.xing.com/images/a878e196c2cb2ef979ca69b8aca370c6-1/can-dogan.1024x1024.jpg">
           </ion-avatar>
           <ion-label>
             <h2>Can Dogan</h2>
@@ -89,7 +89,7 @@
 
         <ion-item>
           <ion-avatar slot="start">
-            <img src="">
+            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEs3ApGuax8MQ/profile-displayphoto-shrink_200_200/0?e=1610582400&v=beta&t=15NKQ_WqPW3wWm_l5jB8XQ4K7B9K7tAnAL05QG98c4c">
           </ion-avatar>
           <ion-label>
             <h2>Julian Schwarz</h2>
@@ -99,7 +99,7 @@
 
         <ion-item>
           <ion-avatar slot="start">
-            <img src="">
+            <img src="./Alex.jpeg">
           </ion-avatar>
           <ion-label>
             <h2>Alexander Geib</h2>
@@ -109,7 +109,7 @@
 
         <ion-item>
           <ion-avatar slot="start">
-            <img src="">
+            <img src="https://profile-images.xing.com/static/nobody_m.1024x1024.jpg">
           </ion-avatar>
           <ion-label>
             <h2>Kaan Selcuk</h2>
