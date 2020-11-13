@@ -17,6 +17,11 @@
       </ion-header>
     
       <div id="container">
+
+         <div>
+            <ion-searchbar id="help-searchbar" aria-placeholder="Search"></ion-searchbar>
+          </div>
+
         <ion-slides>
 
         <ion-slide>
@@ -94,6 +99,12 @@
         </ion-slide>
       </ion-slides>
       </div>
+
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button @click="showMessage">
+        <ion-icon :src="i.add" color="white"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
     </ion-content>
   </ion-page>
 </template>
@@ -157,5 +168,10 @@ ion-menu-button {
 
 #container a {
   text-decoration: none;
+}
+
+#help-searchbar {
+  position: relative;
+  top: 15px;
 }
 </style>

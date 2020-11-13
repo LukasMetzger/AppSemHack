@@ -118,6 +118,12 @@
         </ion-item>
       </ion-list>
       </div>
+
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button @click="showMessage">
+        <ion-icon :src="i.add" color="white"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
     </ion-content>
   </ion-page>
 </template>
@@ -126,6 +132,7 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
 import { useRoute } from 'vue-router';
 import { ref, computed, watch } from 'vue';
+import * as allIcons from "ionicons/icons";
 
 export default {
   name: 'Folder',
@@ -147,7 +154,7 @@ export default {
       folder.value = matchedFolder.value as string;
     })
     
-    return { folder }
+    return { folder, i:allIcons }
   }
 }
 </script>
