@@ -5,35 +5,53 @@
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title>myMentor</ion-title>
+        <ion-title>mentorSelected</ion-title>
       </ion-toolbar>
     </ion-header>
     
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">myMentor</ion-title>
+          <ion-title size="large">mentorSelected</ion-title>
         </ion-toolbar>
       </ion-header>
     
       <div id="container">
-        <h2>Mentorship Management</h2>
-        <ion-card style="text-align: center; margin-top: 20%">
-          <ion-card-header>
-            <ion-button expand="full" color="primary" href="/mentorSelected">Select Mentor</ion-button>
-          </ion-card-header>
-          <ion-card-content>
-            <ion-card-title style="text-align: justify; font-size: 12px; text-decoration: none;">This button is used to select a new mentor. If you already have a mentor, you will be redirected to his profile.</ion-card-title>
-          </ion-card-content>
-        </ion-card>
-        <ion-card style="text-align: center; margin-top: 20%">
-          <ion-card-header>
-            <ion-button expand="full" color="primary">Provide Mentorship</ion-button>
-          </ion-card-header>
-          <ion-card-content>
-            <ion-card-title style="text-align: justify; font-size: 12px; text-decoration: none;">If you want to provide yourself as a mentor, you can just ask for a mentorship privilege.</ion-card-title>
-          </ion-card-content>
-        </ion-card>
+        <div id="profile-bg"></div>
+          <div id="content">
+              <div id="profile-info">
+                  <img id="profile-image" src="https://profile-images.xing.com/images/a878e196c2cb2ef979ca69b8aca370c6-1/can-dogan.1024x1024.jpg">
+                  <h3 id="profile-name">Can Dogan</h3>
+                  <span id="profile-description">dogan_can@mail.de</span>
+              </div>
+          </div>
+          <div>
+           <ion-item>
+            <ion-label>Institut:</ion-label>
+            <ion-note slot="end">Hochschule Mainz</ion-note>
+          </ion-item>
+           <ion-item>
+            <ion-label>Studiengang:</ion-label>
+            <ion-note slot="end">Wirtschaftsinformatik B. Sc. dual</ion-note>
+          </ion-item>
+           <ion-item>
+            <ion-label>Semester:</ion-label>
+            <ion-note slot="end">5.</ion-note>
+          </ion-item>
+           <ion-item>
+            <ion-label>Fähigkeiten:</ion-label>
+            <ion-note slot="end">SQL, PHP, JS, TS</ion-note>
+          </ion-item>
+           <ion-item>
+            <ion-label>Interessen:</ion-label>
+            <ion-note slot="end">Games, Fußball</ion-note>
+          </ion-item>
+          </div>
+          <div>
+            <section class="full-width">
+              <ion-button shape="round" expand="full" color="primary" id="mentorSelected-backButton" href="/myMentor">Back to myMentor</ion-button>
+            </section>
+          </div>
       </div>
     </ion-content>
   </ion-page>
@@ -78,7 +96,6 @@ ion-menu-button {
   text-align: center;
   left: 0;
   right: 0;
-
 }
 
 #container strong {
@@ -97,8 +114,16 @@ ion-menu-button {
   text-decoration: none;
 }
 
-.flexColumn {
+.initflex {
+    display: flex;
+}
 
+.flexRow {
+    flex-direction: row;
+}
+
+.flexColumn {
+    flex-direction: column;
 }
 
 #profile-bg {
@@ -151,11 +176,11 @@ ion-menu-button {
   box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
 }
 
-#myMentor-selectNewMentor {
-  margin-top: 75px;
-}
-
-#myMentor-provideMentorship {
-  margin-top: 75px;
+#mentorSelected-backButton {
+    margin-left: 2.5%;
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    height: 7.5%;
 }
 </style>
