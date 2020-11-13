@@ -53,7 +53,7 @@
       </ion-item>
       <ion-item>
         <ion-avatar>
-          <img src="https://profile-images.xing.com/static/nobody_m.1024x1024.jpg">
+          <img src="./Kaan.jpeg">
         </ion-avatar>
         <ion-label class="profile-avatar">Kaan Selcuk</ion-label>
         <ion-button color='success'><a class="profile-friends-write" href="/Channels" >write</a></ion-button>
