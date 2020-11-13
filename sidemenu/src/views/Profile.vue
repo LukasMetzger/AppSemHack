@@ -34,7 +34,7 @@
         <ion-avatar>
           <img src="https://profile-images.xing.com/images/a878e196c2cb2ef979ca69b8aca370c6-1/can-dogan.1024x1024.jpg">
         </ion-avatar>
-        <ion-label class="profile-avatar">Can Dogan</ion-label>
+        <ion-label class="profile-avatar">Can Dogan (<a style="font-weight: bold; text-decoration: none;" href="/mentorSelected">Mentor</a>)</ion-label>
         <ion-button color='success'><a class="profile-friends-write" href="/Channels" >Write</a></ion-button>
       </ion-item>
       <ion-item>
@@ -56,13 +56,6 @@
           <img src="./Kaan.jpeg">
         </ion-avatar>
         <ion-label class="profile-avatar">Kaan Selcuk</ion-label>
-        <ion-button color='success'><a class="profile-friends-write" href="/Channels" >write</a></ion-button>
-      </ion-item>
-      <ion-item>
-        <ion-avatar>
-          <img src="https://www.klicksafe.de/fileadmin/media/images/themen/kommunizieren/Apps/Mobile_Games/Super_Mario_Run.png">
-        </ion-avatar>
-        <ion-label class="profile-avatar">Super Mario</ion-label>
         <ion-button color='success'><a class="profile-friends-write" href="/Channels" >write</a></ion-button>
       </ion-item>
     </ion-list>
