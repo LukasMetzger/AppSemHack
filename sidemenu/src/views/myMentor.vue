@@ -20,7 +20,7 @@
         <h2>Mentorship Management</h2>
         <ion-card style="text-align: center; margin-top: 20%">
           <ion-card-header>
-            <ion-button expand="full" color="primary" href="/mentorSelected">Select Mentor</ion-button>
+            <ion-button expand="full" color="primary" href="/mySelectedMentor">Select Mentor</ion-button>
           </ion-card-header>
           <ion-card-content>
             <ion-card-title style="text-align: justify; font-size: 12px; text-decoration: none;">This button is used to select a new mentor. If you already have a mentor, you will be redirected to his profile.</ion-card-title>

@@ -7,7 +7,7 @@ import Help from '@/views/Help.vue';
 import myMentor from '@/views/myMentor.vue';
 import Profile from '@/views/Profile.vue';
 import Events from '@/views/Events.vue';
-import mentorSelected from '@/views/mentorSelected.vue';
+import mySelectedMentor from '@/views/mySelectedMentor.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -50,9 +50,9 @@ const routes: Array<RouteRecordRaw> = [
     component: myMentor
   },
   {
-    path: '/mentorSelected',
-    name: 'mentorSelected',
-    component: mentorSelected
+    path: '/mySelectedMentor',
+    name: 'mySelectedMentor',
+    component: mySelectedMentor
   },
   {
     path: '/folder/:id',
