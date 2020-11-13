@@ -17,7 +17,101 @@
       </ion-header>
     
       <div id="container">
-        <p> Hier ist die Channels Seite</p>
+        <ion-list>
+        <ion-list-header>
+          <h1>Groups</h1>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="./hs-mainz.jpg">
+          </ion-avatar>
+          <ion-label>
+            <h2>My university</h2>
+            <h3>I'm a big deal</h3>
+            <p>Listen, I've had a pretty messed up day...</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="./LogoWirtschaft.png">
+          </ion-avatar>
+          <ion-label>
+            <h2>HS-Mainz WI18-ERP Systems</h2>
+            <h3>Course by Prof. Dr. Mustermann</h3>
+            <p>Does anyone want to provide old exams?</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="./Football_Image_Logo.png">
+          </ion-avatar>
+          <ion-label>
+            <h2>Football</h2>
+            <h3>Everyone who is interested in football</h3>
+            <p>Someone wanna play on Friday?</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="./DEH2020_01_logo_color_RGB.jpg">
+          </ion-avatar>
+          <ion-label>
+            <h2>Semesterack</h2>
+            <h3>Share your ideas about the Semesterhack 2.0</h3>
+            <p>Hi Guys, i have a great idea concerning</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list>
+        <ion-list-header>
+          <h1>Friends</h1>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="">
+          </ion-avatar>
+          <ion-label>
+            <h2>Can Dogan</h2>
+            <p>Want to get something to eat?</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="">
+          </ion-avatar>
+          <ion-label>
+            <h2>Julian Schwarz</h2>
+            <p>Learn session on friday?</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="">
+          </ion-avatar>
+          <ion-label>
+            <h2>Alexander Geib</h2>
+            <p>Want to play football on friday?</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="">
+          </ion-avatar>
+          <ion-label>
+            <h2>Kaan Selcuk</h2>
+            <p>Whats up?</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
       </div>
     </ion-content>
   </ion-page>
@@ -60,11 +154,8 @@ ion-menu-button {
 
 #container {
   text-align: center;
-  position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 #container strong {
