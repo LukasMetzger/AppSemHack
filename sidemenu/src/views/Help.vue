@@ -27,19 +27,35 @@
                 <img style="width: 15px; height: 15px;" :src="i.funnel">
               </ion-chip>
             </div>
-            <div>
-              <ion-chip outline color="dark">
-                <ion-icon name="videocam"></ion-icon>
-                <ion-label>FAQ</ion-label>
-                <ion-icon name="close-circle"></ion-icon>
-              </ion-chip>
-            </div>
-            <div>
-              <ion-chip outline color="dark">
-                <ion-icon name="videocam"></ion-icon>
-                <ion-label>BLOG</ion-label>
-                <ion-icon name="close-circle"></ion-icon>
-              </ion-chip>
+            <div class="flexRow">
+              <a>
+                <ion-chip outline color="dark">
+                  <ion-icon name="videocam"></ion-icon>
+                  <ion-label>FAQ</ion-label>
+                  <ion-icon name="close-circle"></ion-icon>
+                </ion-chip>
+              </a>
+              <a>
+                <ion-chip outline color="dark">
+                  <ion-icon name="videocam"></ion-icon>
+                  <ion-label>BLOG</ion-label>
+                  <ion-icon name="close-circle"></ion-icon>
+                </ion-chip>
+              </a>
+              <a>
+                <ion-chip outline color="dark">
+                  <ion-icon name="videocam"></ion-icon>
+                  <ion-label>Channels</ion-label>
+                  <ion-icon name="close-circle"></ion-icon>
+                </ion-chip>
+              </a>
+              <a>
+                <ion-chip outline color="dark">
+                  <ion-icon name="videocam"></ion-icon>
+                  <ion-label>Events</ion-label>
+                  <ion-icon name="close-circle"></ion-icon>
+                </ion-chip>
+              </a>
             </div>
           </div>
           <div id="help-searchResults" class="flexColumn">

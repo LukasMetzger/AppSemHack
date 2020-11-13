@@ -22,7 +22,7 @@
               <div id="profile-info">
                   <img id="profile-image" src="https://profile-images.xing.com/images/a878e196c2cb2ef979ca69b8aca370c6-1/can-dogan.1024x1024.jpg">
                   <h3 id="profile-name">Can Dogan</h3>
-                  <span id="profile-description">dogan_can@mail.de</span>
+                  <span id="profile-description">can.dogan@students.hs-mainz.de</span>
               </div>
           </div>
           <div>

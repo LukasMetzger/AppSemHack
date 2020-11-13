@@ -22,7 +22,7 @@
               <div id="profile-info">
                   <img id="profile-image" src="https://media-exp1.licdn.com/dms/image/C4D03AQG7nImdbLC__Q/profile-displayphoto-shrink_200_200/0?e=1610582400&v=beta&t=nVMNoDA1PvJGYQc8qsO9QxF3H0OrQJDifBeBDjiDXew">
                   <h3 id="profile-name">Lukas Metzger</h3>
-                  <span id="profile-description">lukas.bischofsheim@gmx.de</span>
+                  <span id="profile-description">lukas.metzger@students.hs-mainz.de</span>
               </div>
           </div>
       </div>
