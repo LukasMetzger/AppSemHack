@@ -5,8 +5,13 @@
         <ion-content>
           <ion-list id="inbox-list">
             <ion-list-header>Menu</ion-list-header>
-            <ion-note>Max Mustermann</ion-note>
-  
+            <ion-chip>
+    <ion-avatar>
+      <img src="https://media-exp1.licdn.com/dms/image/C4D03AQG7nImdbLC__Q/profile-displayphoto-shrink_200_200/0?e=1610582400&v=beta&t=nVMNoDA1PvJGYQc8qsO9QxF3H0OrQJDifBeBDjiDXew">
+    </ion-avatar>
+    <ion-label>Lukas Metzger</ion-label>
+  </ion-chip>
+
             <ion-menu-toggle auto-hide="false" v-for="(p, i) in appPages" :key="i">
                 <ion-item @click="selectedIndex = i" router-direction="root" :router-link="p.url" lines="none" detail="false" class="hydrated" :class="{ selected: selectedIndex === i }">
                 <ion-icon slot="start" :ios="p.iosIcon" :md="p.mdIcon"></ion-icon>
@@ -45,8 +50,7 @@ export default defineComponent({
     IonList, 
     IonListHeader, 
     IonMenu, 
-    IonMenuToggle, 
-    IonNote, 
+    IonMenuToggle,  
     IonRouterOutlet, 
     IonSplitPane,
   },
