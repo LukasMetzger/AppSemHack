@@ -17,6 +17,9 @@
       </ion-header>
     
       <div id="container">
+        <div>
+            <ion-searchbar id="help-searchbar" aria-placeholder="Search"></ion-searchbar>
+          </div>
           <ion-card style="text-align: center">
     <ion-card-header>
       <ion-card-title>Your Calendar</ion-card-title>
@@ -146,5 +149,10 @@ ion-slides {
     p b {
       color: var(--ion-text-color, #000000);
     }
+
+    #help-searchbar {
+  position: relative;
+  top: -20px;
+}
 
 </style>

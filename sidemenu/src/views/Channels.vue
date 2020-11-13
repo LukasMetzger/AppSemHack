@@ -17,6 +17,11 @@
       </ion-header>
     
       <div id="container">
+
+        <div>
+            <ion-searchbar id="help-searchbar" aria-placeholder="Search"></ion-searchbar>
+          </div>
+
         <ion-list>
         <ion-list-header>
           <h1>Groups</h1>
@@ -131,13 +136,13 @@ export default {
     IonMenuButton,
     IonPage,
     IonTitle,
-    IonToolbar,
+    IonToolbar
   },
   setup() {
     const route = useRoute();
     const folder = ref(route.params.id || 'Inbox');
     const matchedFolder = computed(() => route.params.id);
-    
+
     watch(matchedFolder, () => {
       folder.value = matchedFolder.value as string;
     })
@@ -172,5 +177,10 @@ ion-menu-button {
 
 #container a {
   text-decoration: none;
+}
+
+#help-searchbar {
+  position: relative;
+  top: 0px;
 }
 </style>
