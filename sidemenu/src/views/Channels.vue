@@ -109,7 +109,7 @@
 
         <ion-item>
           <ion-avatar slot="start">
-            <img src="https://profile-images.xing.com/static/nobody_m.1024x1024.jpg">
+            <img src="./Kaan.jpeg">
           </ion-avatar>
           <ion-label>
             <h2>Kaan Selcuk</h2>
