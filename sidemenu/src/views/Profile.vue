@@ -20,7 +20,7 @@
         <div id="profile-bg"></div>
           <div id="content">
               <div id="profile-info">
-                  <img id="profile-image" src="./IMG_0674.jpg">
+                  <img id="profile-image" src="https://media-exp1.licdn.com/dms/image/C4D03AQG7nImdbLC__Q/profile-displayphoto-shrink_200_200/0?e=1610582400&v=beta&t=nVMNoDA1PvJGYQc8qsO9QxF3H0OrQJDifBeBDjiDXew">
                   <h3 id="profile-name">Lukas Metzger</h3>
                   <span id="profile-description">lukas.bischofsheim@gmx.de</span>
               </div>
@@ -46,7 +46,7 @@
       </ion-item>
       <ion-item>
         <ion-avatar>
-          <img src="https://profile-images.xing.com/static/nobody_m.1024x1024.jpg">
+          <img src="./Alex.jpeg">
         </ion-avatar>
         <ion-label class="profile-avatar">Alex Geib</ion-label>
         <ion-button color='success'><a class="profile-friends-write" href="/Channels" >write</a></ion-button>

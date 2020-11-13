@@ -28,8 +28,8 @@
           </ion-avatar>
           <ion-label>
             <h2>My university</h2>
-            <h3>I'm a big deal</h3>
-            <p>Listen, I've had a pretty messed up day...</p>
+            <h3>Hochschule Mainz</h3>
+            <p>Does someone know when the Semsterhack starts</p>
           </ion-label>
         </ion-item>
 
